@@ -21,6 +21,9 @@
 #define _GST_GIGESIM_H_
 
 #include <gst/base/gstbasesink.h>
+
+/* GigeSimSDK.h is using defines from cstdint but not including it, so we need to do it instead */
+#include <cstdint>
 #include <GigeSimSDK.h>
 
 G_BEGIN_DECLS
