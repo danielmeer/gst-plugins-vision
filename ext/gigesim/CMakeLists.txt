@@ -19,7 +19,9 @@ target_link_libraries (${libname}
   ${GSTREAMER_LIBRARY}
   ${GSTREAMER_BASE_LIBRARY}
   ${GSTREAMER_VIDEO_LIBRARY}
-  ${GIGESIM_LIBRARIES})
+  ${GIGESIM_LIBRARIES}
+  rt
+  turbojpeg)
 
 if (WIN32)
   install (FILES $<TARGET_PDB_FILE:${libname}> DESTINATION ${PDB_INSTALL_DIR} COMPONENT pdb OPTIONAL)
